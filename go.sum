@@ -79,6 +79,8 @@ github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWE
 github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
 github.com/novax/proxyplease v0.0.0-20250112110413-1af4c10a5143 h1:V/jhU8TXTtnrotmm7GdZDCoTX1c72hQdBbjEhBkE2LE=
 github.com/novax/proxyplease v0.0.0-20250112110413-1af4c10a5143/go.mod h1:IvhtQHpIKGn1owPs3ln3L0jrdUx9VdIw+oFJB7iStPw=
+github.com/novax/proxyplease v0.0.0-20250112123204-5f2da652bc1f h1:niNJNxSK5xu3x/FhBYdvZ5rp17ZZLLOnoq974XakFkg=
+github.com/novax/proxyplease v0.0.0-20250112123204-5f2da652bc1f/go.mod h1:IvhtQHpIKGn1owPs3ln3L0jrdUx9VdIw+oFJB7iStPw=
 github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2 h1:JhzVVoYvbOACxoUmOs6V/G4D5nPVUW73rKvXxP4XUJc=
 github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2/go.mod h1:iIss55rKnNBTvrwdmkUpLnDpZoAHvWaiq5+iMmen4AE=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

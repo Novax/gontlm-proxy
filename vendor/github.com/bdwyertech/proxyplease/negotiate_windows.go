@@ -1,3 +1,4 @@
+//go:build windows
 // +build windows
 
 package proxyplease
@@ -7,13 +8,11 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
+	"github.com/alexbrainman/sspi"
+	"github.com/alexbrainman/sspi/negotiate"
 	"net"
 	"net/http"
 	"net/url"
-	"strings"
-
-	"github.com/alexbrainman/sspi"
-	"github.com/alexbrainman/sspi/negotiate"
 )
 
 func dialNegotiate(p Proxy, addr string, baseDial func() (net.Conn, error)) (net.Conn, error) {
@@ -25,11 +24,7 @@ func dialNegotiate(p Proxy, addr string, baseDial func() (net.Conn, error)) (net
 		return conn, err
 	}
 
-	h, err := canonicalizeHostname(p.URL.Hostname())
-	if err != nil {
-		debugf("negotiate> Error canonicalizing hostname: %s", err)
-		return conn, err
-	}
+	h := p.URL.Hostname()
 	spn := "HTTP/" + h
 
 	var cred *sspi.Credentials
@@ -78,24 +73,4 @@ func dialNegotiate(p Proxy, addr string, baseDial func() (net.Conn, error)) (net
 
 	debugf("negotiate> Successfully injected Negotiate::Kerberos to connection")
 	return conn, nil
-}
-
-func canonicalizeHostname(hostname string) (string, error) {
-	addrs, err := net.LookupHost(hostname)
-	if err != nil {
-		return "", err
-	}
-	if len(addrs) < 1 {
-		return hostname, nil
-	}
-
-	names, err := net.LookupAddr(addrs[0])
-	if err != nil {
-		return "", err
-	}
-	if len(names) < 1 {
-		return hostname, nil
-	}
-
-	return strings.TrimRight(names[0], "."), nil
 }

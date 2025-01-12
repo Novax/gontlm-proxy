@@ -8,7 +8,7 @@ replace github.com/darren/gpac => github.com/bdwyertech/gpac v0.0.0-202310231752
 
 // replace github.com/aus/proxyplease => ../proxyplease
 
-replace github.com/bdwyertech/proxyplease => github.com/novax/proxyplease v0.0.0-20250112110413-1af4c10a5143
+replace github.com/bdwyertech/proxyplease => github.com/novax/proxyplease v0.0.0-20250112123204-5f2da652bc1f
 
 // replace github.com/rapid7/go-get-proxied => ../go-get-proxied
 
