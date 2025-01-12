@@ -201,6 +201,7 @@ func Run() {
 				Username:  ProxyUser,
 				Password:  ProxyPass,
 				Domain:    ProxyDomain,
+				Keytab:    ProxyKeytab,
 				TargetURL: &url.URL{Host: addr, Scheme: scheme},
 			})
 
