@@ -8,7 +8,7 @@ replace github.com/darren/gpac => github.com/bdwyertech/gpac v0.0.0-202310231752
 
 // replace github.com/aus/proxyplease => ../proxyplease
 
-// replace github.com/bdwyertech/proxyplease => ../proxyplease
+replace github.com/bdwyertech/proxyplease => github.com/novax/proxyplease v0.0.0-20250112110413-1af4c10a5143
 
 // replace github.com/rapid7/go-get-proxied => ../go-get-proxied
 
@@ -33,6 +33,13 @@ require (
 	github.com/dop251/goja v0.0.0-20230304130813-e2f543bf4b4c // indirect
 	github.com/go-sourcemap/sourcemap v2.1.3+incompatible // indirect
 	github.com/google/pprof v0.0.0-20230228050547-1710fef4ab10 // indirect
+	github.com/hashicorp/go-uuid v1.0.3 // indirect
+	github.com/jcmturner/aescts/v2 v2.0.0 // indirect
+	github.com/jcmturner/dnsutils/v2 v2.0.0 // indirect
+	github.com/jcmturner/gofork v1.7.6 // indirect
+	github.com/jcmturner/goidentity/v6 v6.0.1 // indirect
+	github.com/jcmturner/gokrb5/v8 v8.4.4 // indirect
+	github.com/jcmturner/rpc/v2 v2.0.3 // indirect
 	github.com/launchdarkly/go-ntlmssp v1.0.1 // indirect
 	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/net v0.23.0 // indirect

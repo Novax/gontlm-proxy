@@ -38,6 +38,7 @@ func init() {
 var ProxyUser = os.Getenv("GONTLM_USER")
 var ProxyPass = os.Getenv("GONTLM_PASS")
 var ProxyDomain = os.Getenv("GONTLM_DOMAIN")
+var ProxyKeytab = os.Getenv("GONTLM_KEYTAB")
 var ProxyOverrides map[string]*url.URL
 var ProxyDialerCacheTimeout = 60 * time.Minute
 
@@ -156,6 +157,7 @@ func Run() {
 								Username: ProxyUser,
 								Password: ProxyPass,
 								Domain:   ProxyDomain,
+								Keytab:   ProxyKeytab,
 							})(ctx, network, pxyUrl.Host)
 
 							if err != nil {
