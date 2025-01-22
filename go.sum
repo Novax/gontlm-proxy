@@ -83,6 +83,8 @@ github.com/novax/proxyplease v0.0.0-20250112123204-5f2da652bc1f h1:niNJNxSK5xu3x
 github.com/novax/proxyplease v0.0.0-20250112123204-5f2da652bc1f/go.mod h1:IvhtQHpIKGn1owPs3ln3L0jrdUx9VdIw+oFJB7iStPw=
 github.com/novax/proxyplease v0.0.0-20250112144242-1243e4b0e8dc h1:SFQ9doIkaTdDktG4zqZS0C/LDo+qG1bj+/9Q2XuBs3s=
 github.com/novax/proxyplease v0.0.0-20250112144242-1243e4b0e8dc/go.mod h1:IvhtQHpIKGn1owPs3ln3L0jrdUx9VdIw+oFJB7iStPw=
+github.com/novax/proxyplease v0.0.0-20250122081321-e9f41f6c4d09 h1:hAYmnSNwCkfYRw7AoXC13P1S9E9Em+JxsRj3xShcSdk=
+github.com/novax/proxyplease v0.0.0-20250122081321-e9f41f6c4d09/go.mod h1:IvhtQHpIKGn1owPs3ln3L0jrdUx9VdIw+oFJB7iStPw=
 github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2 h1:JhzVVoYvbOACxoUmOs6V/G4D5nPVUW73rKvXxP4XUJc=
 github.com/phayes/freeport v0.0.0-20180830031419-95f893ade6f2/go.mod h1:iIss55rKnNBTvrwdmkUpLnDpZoAHvWaiq5+iMmen4AE=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
